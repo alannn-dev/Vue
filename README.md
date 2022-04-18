@@ -1,5 +1,7 @@
 # Vue
 
+Source : https://dev.to/ericlecodeur/apprendre-vue-js-3-jour-1-concepts-de-base-2jfn
+
 # Série d'article sur Vue.js 3
 Bonjour, ceci est le premier article d'une série d'article qui couvrira le monde de Vue 3. Cet article se veut un résumé de mes notes et du coup un excellent aide-mémoire (cheat sheet)
 
@@ -16,7 +18,3 @@ Efficacité/rapidité de développement
 Ré utilisabilité du code
 Maintenance et future développement
 
-emmet.includeLanguages: {
-    'vue' : 'html',
-        'vue-html': 'html'
-}
