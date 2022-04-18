@@ -35,6 +35,9 @@ Voici la liste des directives disponible:
 
 Permet d'assigner une expression à un attribut. Vue va remplacer l'expression par sa valeur
 
+# v-bind sur l'attribut "class" et les "style"
+Il est possible de faire un v-bind sur l'attribut class et style
+
 # v-once
 
 Avec la directive v-once Vue va interpolé l'expression seulement une fois. L'expression sera donc ignorée pour tous les autres rafraîchissements
@@ -47,4 +50,32 @@ Permet d'afficher une expression avec des tags HTML.
 
 Permet de lier la valeur d'un champ de saisie avec une variable. Si vous modifiez l'un ou l'autre Vue mettra à jour automatiquement l'autre. Du coup, la variable et le champ de saisie auront toujours la même valeur.
 
+# v-if, v-else-if et v-else
+
+Rend un élément visible ou invisible selon la valeur vrai ou faux de l'expression. Lorsque non visible l'élément n'est pas rendu dans le html
+
+# v-show
+
+Rends un élément visible ou invisible selon la valeur vrai ou faux de l'expression. Par contre, l'élément reste toujours présent dans le rendu. Lorsque non visible l'élément est rendu avec l'attribut CSS: display: none;
+
+# v-for
+
+Permet d'afficher une liste d'élément
+
+# Ref
+
+Permet à votre application Vue d'identifier un élément HTML et d'effectuer des actions sur cet élément.
+
+# L'élément < template>
+
+Cet élément permet d'utiliser des directives de Vue sans créer un élément html.
+
+
+# Les Événements
+
+Vue permet de gérer les événements javascript comme click, input, change, etc. Pour ce faire vous devez utiliser la directive v-on: suivi du nom de l'évènement.
+
+# v-on:click
+
+Permet d'exécuter du code sur le click d'un élément
 
