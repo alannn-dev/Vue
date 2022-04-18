@@ -79,3 +79,22 @@ Vue permet de gérer les événements javascript comme click, input, change, etc
 
 Permet d'exécuter du code sur le click d'un élément
 
+# v-on:keydown
+
+Permet d'exécuter du code sur l'appuie d'une touche (ex. enter)
+
+Autre valeurs possible pour v-on:keydown, keyup, keypress
+
+Autre valeur possibles pour .enter, tab, esc, up, down, left, right, delete
+
+# v-on :submit
+
+Permet d'exécuter du code lors de la soumission d'un formulaire
+
+# Les méthodes
+
+Vue js permet de créer des méthodes afin d'y placer un block de code réutilisable dans votre application.
+
+# Les "Components" et sous "components"
+
+Chaque élément distinct de votre page devra avoir son propre component. Par exemple la barre de navigation pourrait être contenue dans un component NavBar et réutilisé sur plusieurs pages.
