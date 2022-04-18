@@ -15,3 +15,8 @@ Organisation de votre code
 Efficacité/rapidité de développement
 Ré utilisabilité du code
 Maintenance et future développement
+
+emmet.includeLanguages: {
+    'vue' : 'html',
+        'vue-html': 'html'
+}
