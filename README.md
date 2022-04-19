@@ -86,6 +86,7 @@ Permet d'exécuter du code sur l'appuie d'une touche (ex. enter)
 Autre valeurs possible pour v-on:keydown, keyup, keypress
 
 Autre valeur possibles pour .enter, tab, esc, up, down, left, right, delete
+Ex: <div @keydown.left="bougeGauche" @keydown.right="bougeDroite" @keydown.up="bougeHaut" @keydown.down="bougeBas">
 
 # v-on :submit
 
