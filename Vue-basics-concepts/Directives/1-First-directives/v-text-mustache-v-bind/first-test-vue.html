@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First test vue.js</title>
+</head>
+    <body>
+
+        <div id="app">
+                <h1> {{ message }} </h1> 
+                <!-- Or : <h1 v-text="title"></h1> -->
+
+                <!-- V-BIND : We bind the value of the attribute to the model -->
+                <p v-text="message" v-bind:title="title"></p>
+
+	            <p>Avec des moustaches: {{message}}</p>
+	            <p>Nous sommes en {{date.getFullYear()}}.</p>
+        </div>
+
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="./app.js"></script>
+
+    </boby>
+</html>
+

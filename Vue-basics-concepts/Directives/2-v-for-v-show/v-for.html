@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> V-for vue.js</title>
+</head>
+    <body>
+
+        <div id="app">
+
+                <!-- V-FOR + v-show -->               
+                <h1>Groupe A</h1>
+                <table>
+                    <tr>
+                        <th scope="col">Student ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Note</th>
+                    </tr>
+
+                    <tr v-for="(student, item) in tab" v-show="student.groupe=='A'"> <!-- groupe B = display:none -->
+                        <td>{{item}}</td> 
+                        <td>{{student.nom}}</td> 
+                        <td>{{student.note}}</td>
+                    </tr>	
+                </table>
+
+                <h1>Groupe B</h1>
+                <table>
+                    <tr>
+                        <th scope="col">Student ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Note</th>
+                    </tr>
+
+                    <tr v-for="(student, item) in tab" v-show="student.groupe=='B'"> <!-- groupe A = display:none -->
+                        <td>{{item}}</td> 
+                        <td>{{student.nom}}</td> 
+                        <td>{{student.note}}</td>
+                    </tr>	
+                </table>
+                
+        </div>
+
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="./app.js"></script>
+
+    </boby>
+</html>
+
