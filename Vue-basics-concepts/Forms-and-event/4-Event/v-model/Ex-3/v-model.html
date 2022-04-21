@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-model</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    
+    <div id="app">
+
+        <select v-model="police">
+
+            <optgroup style="font-family:serif">
+                <option>Serif</option>
+             </optgroup>
+
+            <optgroup style="font-family:sans-serif">
+                <option>Sans-serif</option>
+             </optgroup>
+           
+             <optgroup style="font-family:monospace">
+                <option> Monospace </option>
+             </optgroup>
+           
+             <optgroup style="font-family:cursive">
+                <option>Cursive</option>
+             </optgroup>
+
+             <optgroup style="font-family:fantasy">
+                <option>Fantasy</option>
+             </optgroup>
+          </select>
+          
+          <p v-bind:style="'font-family:'+police"> Paragraph with font change</p>
+    </div>
+    
+    <script src="./app.js"></script>
+
+</body>
+</html>

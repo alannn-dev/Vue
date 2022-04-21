@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-model</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    
+    <div id="app">
+
+        <ul>
+            <li>Radio buttons:</li>
+            
+            <div>
+                <label for="red">Red</label>
+                <input type="radio" id="red" name="red" value="red" v-model="colors">
+            </div>
+
+            <div>
+                <label for="blue">Blue</label>
+                <input type="radio" id="blue" name="blue" value="blue" v-model="colors">
+            </div>
+        </ul>
+
+
+        <ul>
+            <li>Checkbox:</li>
+
+            <div>
+                <label for="question">Do you want to display the paragraph?</label>
+                <input type="checkbox" id="question" name="question" v-model="show">
+                <p v-show="show" v-bind:style="'color:' + colors"> Text color is {{colors}}</p>
+            </div>
+        </ul>
+
+        <!-- <label for="nbr">Saisissez un nombre</label><input type="number" id="nbr" v-model="nombre">
+	    <p>Le nombre saisi est {{nombre}}.</p> -->
+    </div>
+    
+    <script src="./app.js"></script>
+
+</body>
+</html>
