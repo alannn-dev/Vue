@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computed vue.js</title>
+    <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+<body>
+
+    <!-- Create two number input fields, 
+        limited to numbers between 0 and 99 inclusive. 
+        Use a calculated property to then display a number in a paragraph whose tens digit is that of the number entered in the first field, 
+        and the units digit is that of the number entered in the second field. -->
+
+    <div id="app">
+
+        <label for="nb1">Number 1: </label><input type="number" id="nb1" v-model="nb1" max="99" min="0"><br>
+	    <label for="nb2">Number 2: </label><input type="number" id="nb2" v-model="nb2" max="99" min="0"><br>
+        <p>The mixture of the two numbers is {{unitsAndTens}} </p>
+
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
