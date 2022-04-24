@@ -15,13 +15,18 @@
         Use a calculated property to then display a number in a paragraph whose tens digit is that of the number entered in the first field, 
         and the units digit is that of the number entered in the second field. -->
 
-    <div id="app">
+        <div id="app">
 
-        <label for="nb1">Number 1: </label><input type="number" id="nb1" v-model="nb1" max="99" min="0"><br>
-	    <label for="nb2">Number 2: </label><input type="number" id="nb2" v-model="nb2" max="99" min="0"><br>
-        <p>The mixture of the two numbers is {{unitsAndTens}} </p>
-
-    </div>
+            <label for="nb1">Number 1: </label><input type="number" id="nb1" v-model="nb1" max="99" min="0"><br>
+            <label for="nb2">Number 2: </label><input type="number" id="nb2" v-model="nb2" max="99" min="0"><br>
+            <p>The mixture of the two numbers is {{unitsAndTens}} </p>
+    
+            
+            <label for="chpprenom">First name</label> <input id="chpprenom" v-model="prenom"> <br>
+            <label for="chpnom">Last name</label> <input id="chpnom" v-model="nom"> <br>
+            <label for="chpcomplet">Full name</label> <input id="chpcomplet" v-model="nomComplet">
+    
+        </div>
 
     <script src="./app.js"></script>
 
