@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Vue.js</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    
+    <div id="app">
+
+        <p>Quel groupe afficher&#8239;?
+            <label for="radioa">Groupe A </label><input type="radio" name="chxgroupe" id="radioa" v-model="gp" value="A">
+            <label for="radiob">Groupe B </label><input type="radio" name="chxgroupe" id="radiob" v-model="gp" value="B">
+            <label for="radio2">Les deux </label><input type="radio" name="chxgroupe" id="radio2" v-model="gp" value="AB">
+        </p>
+        <tableau v-bind:grp="gp" v-bind:liste="tab">
+            
+    </div>
+
+<script src="./app.js"></script>
+
+</body>
+</html>
+
