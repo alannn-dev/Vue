@@ -12,7 +12,7 @@ const appli = {
     },
     methods: {
         rale () {
-            this.visible=true;
+            this.visible = true;
         }
     }
 };
@@ -20,8 +20,8 @@ const appli = {
 const app = Vue.createApp(appli);
 
 app.component("tableau",{
-props : ["grp", "liste"],
-template: '<h2>Groupe {{grp}}</h2><table><tr><th scope="col">id étudiant</th><th scope="col">Nom</th><th scope="col">Note</th></tr><tr v-for="(etudiant, item) in liste" v-show="etudiant.groupe.indexOf(grp)"><td>{{item}}</td><td>{{etudiant.nom}}</td><td>{{etudiant.note}}</td></tr></table>'
+    props : ["grp", "liste"],
+    template: '<h2>Groupe {{grp}}</h2><table><tr><th scope="col">id étudiant</th><th scope="col">Nom</th><th scope="col">Note</th></tr><tr v-for="(etudiant, item) in liste" v-show="etudiant.groupe.indexOf(grp)"><td>{{item}}</td><td>{{etudiant.nom}}</td><td>{{etudiant.note}}</td></tr></table>'
 })
 
 app.mount("#app");
